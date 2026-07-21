@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Add goal",
+    "steps": [
+      {
+        "expect": [
+          {
+            "method": "sendMessage",
+            "payload": {
+              "text": "Create a new goal"
+            }
+          }
+        ],
+        "send": {
+          "callback": "goal:add"
+        }
+      }
+    ]
+  }
+]
